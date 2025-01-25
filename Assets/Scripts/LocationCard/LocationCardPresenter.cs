@@ -2,9 +2,9 @@ public class LocationCardPresenter
 {
     private LocationManager locationManager;
     private LocationCardModel locationCardModel;
-    private LocationCardView locationCardView;
+    private ILocationCardView locationCardView;
 
-    public LocationCardPresenter(LocationManager locationManager, LocationCardView locationCardView, Location location)
+    public LocationCardPresenter(LocationManager locationManager, ILocationCardView locationCardView, Location location)
     {
         this.locationManager = locationManager;
         this.locationCardModel = new LocationCardModel(location);
@@ -15,7 +15,7 @@ public class LocationCardPresenter
 
     private void UpdateCardView()
     {
-        locationCardView.UpdateLocationType(locationCardModel.Location.LocationData.LocationType);
+        locationCardView.UpdateLocationColor(locationCardModel.Location.LocationData.ColorCode);
         locationCardView.UpdateLocationName(locationCardModel.Location.LocationData.Name);
         locationCardView.UpdateLocationRent(locationCardModel.Location.LocationData.Rent);
         locationCardView.UpdateRentsWithHouses(locationCardModel.Location.RentsWithHouses);
@@ -23,5 +23,6 @@ public class LocationCardPresenter
         locationCardView.UpdateMortgageValue(locationCardModel.Location.LocationData.MortgageValue);
         locationCardView.UpdateHouseCost(locationCardModel.Location.LocationData.UpgradeCost);
         locationCardView.UpdateHotelCost(locationCardModel.Location.LocationData.UpgradeCost);
+        locationCardView.UpdateRailroadRents(locationCardModel.Location.RailroadRents);
     }
 }

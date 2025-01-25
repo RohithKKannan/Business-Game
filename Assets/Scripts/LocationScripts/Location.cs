@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using UnityEngine;
 
 /// <summary>
 /// Data for a location during gameplay
@@ -15,6 +16,8 @@ public class Location
     private List<float> rentsWithHouses = new();
     private float rentWithHotel;
 
+    private List<float> railroadRents = new();
+
     public Location(LocationData locationData)
     {
         this.locationData = locationData;
@@ -23,6 +26,7 @@ public class Location
         this.isMortgaged = false;
         SetHouseBasedRent();
         SetRentWithHotel();
+        SetRailroadRents();
     }
 
     private void SetHouseBasedRent()
@@ -38,12 +42,23 @@ public class Location
         rentWithHotel = locationData.Rent * locationData.UpgradeRentMultiplier * 5;
     }
 
+    private void SetRailroadRents()
+    {
+        railroadRents.Add(locationData.Rent);
+
+        for (int i = 1; i < 4; i++)
+        {
+            railroadRents.Add(railroadRents[i - 1] * 2);
+        }
+    }
+
     public LocationData LocationData => locationData;
     public string Owner => owner;
     public int CurrentUpgrade => currentUpgrade;
     public bool IsMortgaged => isMortgaged;
     public List<float> RentsWithHouses => rentsWithHouses;
     public float RentWithHotel => rentWithHotel;
+    public List<float> RailroadRents => railroadRents;
 
     public void SetOwner(string owner) => this.owner = owner;
     public void SetCurrentUpgrade(int currentUpgrade) => this.currentUpgrade = currentUpgrade;

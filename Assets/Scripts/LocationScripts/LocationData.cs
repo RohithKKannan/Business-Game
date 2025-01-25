@@ -9,6 +9,7 @@ public class LocationData
     public int LocationID;
     public string Name;
     public LocationType LocationType;
+    public ColorCode ColorCode;
     public float Cost;
     public float Rent;
     public float UpgradeCost;
@@ -19,6 +20,14 @@ public class LocationData
 
 public enum LocationType
 {
+    ColorCoded,
+    Utility,
+    Railroad
+}
+
+public enum ColorCode
+{
+    None,
     Brown,
     LightBlue,
     Pink,
@@ -27,6 +36,4 @@ public enum LocationType
     Yellow,
     Green,
     DarkBlue,
-    Utility,
-    Railroad
 }

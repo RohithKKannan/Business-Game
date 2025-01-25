@@ -473,27 +473,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 293fc24b92a527549aedf7eff9ef82f6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  locationTypeColors:
-  - locationType: 0
-    color: {r: 0.31132078, g: 0.1505735, b: 0.08957814, a: 1}
-  - locationType: 1
-    color: {r: 0.3066038, g: 0.7988351, b: 1, a: 1}
-  - locationType: 2
-    color: {r: 1, g: 0.30588233, b: 0.89713204, a: 1}
-  - locationType: 3
-    color: {r: 1, g: 0.3460688, b: 0.1273585, a: 1}
-  - locationType: 4
-    color: {r: 1, g: 0.1462264, b: 0.19961168, a: 1}
-  - locationType: 5
-    color: {r: 1, g: 0.98885334, b: 0.2688679, a: 1}
-  - locationType: 6
-    color: {r: 0, g: 0.6509434, b: 0.055095244, a: 1}
-  - locationType: 7
-    color: {r: 0.13903032, g: 0.1273585, b: 1, a: 1}
-  - locationType: 8
-    color: {r: 0.509434, g: 0.509434, b: 0.509434, a: 1}
-  - locationType: 9
-    color: {r: 0.50980395, g: 0.50980395, b: 0.50980395, a: 1}
+  colorCodeColorContainer: {fileID: 11400000, guid: 5a83ee1abaef1f947b02fc95c066828e, type: 2}
 --- !u!4 &631317239
 Transform:
   m_ObjectHideFlags: 0
@@ -554,8 +534,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   locationsContainer: {fileID: 11400000, guid: fddcdb96215d0b74687676d15bda0d92, type: 2}
-  locationCardPrefab: {fileID: 6022804043918106567, guid: c048321f7eebbec438777d4898351e7c, type: 3}
-  locationCardHolder: {fileID: 1845089529}
+  locationCardViewPrefabContainer: {fileID: 11400000, guid: 2518bd7c2b134764aab8234031f0ad47, type: 2}
+  locationCardsParent: {fileID: 1845089529}
 --- !u!1 &1759667341
 GameObject:
   m_ObjectHideFlags: 0

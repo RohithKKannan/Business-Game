@@ -4,11 +4,11 @@ using UnityEngine;
 public class LocationManager : MonoBehaviour
 {
     [SerializeField] private LocationsContainer locationsContainer;
-    [SerializeField] private LocationCardView locationCardPrefab;
-
-    [SerializeField] private Transform locationCardHolder;
+    [SerializeField] private LocationCardViewPrefabContainer locationCardViewPrefabContainer;
+    [SerializeField] private Transform locationCardsParent;
 
     private GameManager gameManager;
+    private LocationCardViewFactory locationCardViewFactory;
 
     private List<Location> locations = new();
     private List<LocationCardPresenter> locationCards = new();
@@ -16,6 +16,8 @@ public class LocationManager : MonoBehaviour
     public void Init(GameManager gameManager)
     {
         this.gameManager = gameManager;
+
+        locationCardViewFactory = new LocationCardViewFactory(locationCardViewPrefabContainer);
 
         InitializeLocations();
         CreateCards();
@@ -42,7 +44,7 @@ public class LocationManager : MonoBehaviour
 
     public void CreateLocationCard(Location location)
     {
-        LocationCardView locationCardView = GameObject.Instantiate<LocationCardView>(locationCardPrefab, locationCardHolder);
+        ILocationCardView locationCardView = locationCardViewFactory.CreateLocationCardView(location.LocationData, locationCardsParent);
 
         LocationCardPresenter locationCardPresenter = new LocationCardPresenter(this, locationCardView, location);
         locationCards.Add(locationCardPresenter);

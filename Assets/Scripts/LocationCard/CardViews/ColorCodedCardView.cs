@@ -3,7 +3,7 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class LocationCardView : MonoBehaviour, ILocationCardView
+public class ColorCodedCardView : MonoBehaviour, ILocationCardView
 {
     [SerializeField] private Image image_LocationColor;
     [SerializeField] private TMP_Text label_LocationName;
@@ -14,9 +14,9 @@ public class LocationCardView : MonoBehaviour, ILocationCardView
     [SerializeField] private TMP_Text label_HouseCost;
     [SerializeField] private TMP_Text label_HotelCost;
 
-    public void UpdateLocationType(LocationType locationType)
+    public void UpdateLocationColor(ColorCode colorCode)
     {
-        image_LocationColor.color = UtilityService.Instance.GetColorForLocationType(locationType);
+        image_LocationColor.color = UtilityService.Instance.GetColorForColorCode(colorCode);
     }
 
     public void UpdateLocationName(string locationName)
@@ -59,5 +59,9 @@ public class LocationCardView : MonoBehaviour, ILocationCardView
     {
         int cost = Mathf.RoundToInt(upgradeCost);
         label_HotelCost.text = $"Hotels ${cost} plus 4 houses";
+    }
+
+    public void UpdateRailroadRents(List<float> rents)
+    {
     }
 }

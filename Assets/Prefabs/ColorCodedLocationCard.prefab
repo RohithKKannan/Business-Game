@@ -1718,7 +1718,7 @@ GameObject:
   - component: {fileID: 676771782331795823}
   - component: {fileID: 6022804043918106567}
   m_Layer: 0
-  m_Name: LocationCard
+  m_Name: ColorCodedLocationCard
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

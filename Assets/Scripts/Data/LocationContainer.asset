@@ -25,6 +25,7 @@ MonoBehaviour:
     - LocationID: 1
       Name: Mediterranean Avenue
       LocationType: 0
+      ColorCode: 1
       Cost: 60
       Rent: 2
       UpgradeCost: 30
@@ -34,6 +35,7 @@ MonoBehaviour:
     - LocationID: 2
       Name: Baltic Avenue
       LocationType: 0
+      ColorCode: 1
       Cost: 70
       Rent: 4
       UpgradeCost: 30
@@ -42,7 +44,8 @@ MonoBehaviour:
       MortgageValue: 35
     - LocationID: 3
       Name: Oriental Avenue
-      LocationType: 1
+      LocationType: 0
+      ColorCode: 2
       Cost: 100
       Rent: 6
       UpgradeCost: 40
@@ -51,7 +54,8 @@ MonoBehaviour:
       MortgageValue: 50
     - LocationID: 4
       Name: Vermont Avenue
-      LocationType: 1
+      LocationType: 0
+      ColorCode: 2
       Cost: 100
       Rent: 6
       UpgradeCost: 40
@@ -60,7 +64,8 @@ MonoBehaviour:
       MortgageValue: 50
     - LocationID: 5
       Name: Connecticut Avenue
-      LocationType: 1
+      LocationType: 0
+      ColorCode: 2
       Cost: 120
       Rent: 8
       UpgradeCost: 50
@@ -69,7 +74,8 @@ MonoBehaviour:
       MortgageValue: 60
     - LocationID: 6
       Name: St. Charles Place
-      LocationType: 2
+      LocationType: 0
+      ColorCode: 3
       Cost: 140
       Rent: 10
       UpgradeCost: 50
@@ -78,7 +84,8 @@ MonoBehaviour:
       MortgageValue: 70
     - LocationID: 7
       Name: States Avenue
-      LocationType: 2
+      LocationType: 0
+      ColorCode: 3
       Cost: 140
       Rent: 10
       UpgradeCost: 50
@@ -87,7 +94,8 @@ MonoBehaviour:
       MortgageValue: 70
     - LocationID: 8
       Name: Virginia Avenue
-      LocationType: 2
+      LocationType: 0
+      ColorCode: 3
       Cost: 160
       Rent: 12
       UpgradeCost: 60
@@ -96,7 +104,8 @@ MonoBehaviour:
       MortgageValue: 80
     - LocationID: 9
       Name: St. James Place
-      LocationType: 3
+      LocationType: 0
+      ColorCode: 4
       Cost: 180
       Rent: 14
       UpgradeCost: 70
@@ -105,7 +114,8 @@ MonoBehaviour:
       MortgageValue: 90
     - LocationID: 10
       Name: Tennessee Avenue
-      LocationType: 3
+      LocationType: 0
+      ColorCode: 4
       Cost: 180
       Rent: 14
       UpgradeCost: 70
@@ -114,7 +124,8 @@ MonoBehaviour:
       MortgageValue: 90
     - LocationID: 11
       Name: New York Avenue
-      LocationType: 3
+      LocationType: 0
+      ColorCode: 4
       Cost: 200
       Rent: 16
       UpgradeCost: 80
@@ -123,7 +134,8 @@ MonoBehaviour:
       MortgageValue: 100
     - LocationID: 12
       Name: Kentucky Avenue
-      LocationType: 4
+      LocationType: 0
+      ColorCode: 5
       Cost: 220
       Rent: 18
       UpgradeCost: 90
@@ -132,7 +144,8 @@ MonoBehaviour:
       MortgageValue: 110
     - LocationID: 13
       Name: Indiana Avenue
-      LocationType: 4
+      LocationType: 0
+      ColorCode: 5
       Cost: 220
       Rent: 18
       UpgradeCost: 90
@@ -141,7 +154,8 @@ MonoBehaviour:
       MortgageValue: 110
     - LocationID: 14
       Name: Illinois Avenue
-      LocationType: 4
+      LocationType: 0
+      ColorCode: 5
       Cost: 240
       Rent: 20
       UpgradeCost: 100
@@ -150,7 +164,8 @@ MonoBehaviour:
       MortgageValue: 120
     - LocationID: 15
       Name: Atlantic Avenue
-      LocationType: 5
+      LocationType: 0
+      ColorCode: 6
       Cost: 260
       Rent: 22
       UpgradeCost: 110
@@ -159,7 +174,8 @@ MonoBehaviour:
       MortgageValue: 130
     - LocationID: 16
       Name: Ventnor Avenue
-      LocationType: 5
+      LocationType: 0
+      ColorCode: 6
       Cost: 260
       Rent: 22
       UpgradeCost: 110
@@ -168,7 +184,8 @@ MonoBehaviour:
       MortgageValue: 130
     - LocationID: 17
       Name: Marvin Gardens
-      LocationType: 5
+      LocationType: 0
+      ColorCode: 6
       Cost: 280
       Rent: 24
       UpgradeCost: 120
@@ -177,7 +194,8 @@ MonoBehaviour:
       MortgageValue: 140
     - LocationID: 18
       Name: Pacific Avenue
-      LocationType: 6
+      LocationType: 0
+      ColorCode: 7
       Cost: 300
       Rent: 26
       UpgradeCost: 130
@@ -186,7 +204,8 @@ MonoBehaviour:
       MortgageValue: 150
     - LocationID: 19
       Name: North Carolina Avenue
-      LocationType: 6
+      LocationType: 0
+      ColorCode: 7
       Cost: 300
       Rent: 26
       UpgradeCost: 130
@@ -195,7 +214,8 @@ MonoBehaviour:
       MortgageValue: 150
     - LocationID: 20
       Name: Pennsylvania Avenue
-      LocationType: 6
+      LocationType: 0
+      ColorCode: 7
       Cost: 320
       Rent: 28
       UpgradeCost: 140
@@ -204,7 +224,8 @@ MonoBehaviour:
       MortgageValue: 160
     - LocationID: 21
       Name: Park Place
-      LocationType: 7
+      LocationType: 0
+      ColorCode: 8
       Cost: 350
       Rent: 35
       UpgradeCost: 200
@@ -213,7 +234,8 @@ MonoBehaviour:
       MortgageValue: 175
     - LocationID: 22
       Name: Boardwalk
-      LocationType: 7
+      LocationType: 0
+      ColorCode: 8
       Cost: 400
       Rent: 50
       UpgradeCost: 200
@@ -222,7 +244,8 @@ MonoBehaviour:
       MortgageValue: 200
     - LocationID: 23
       Name: Electric Company
-      LocationType: 8
+      LocationType: 1
+      ColorCode: 0
       Cost: 150
       Rent: 20
       UpgradeCost: 0
@@ -231,7 +254,8 @@ MonoBehaviour:
       MortgageValue: 75
     - LocationID: 24
       Name: Water Works
-      LocationType: 8
+      LocationType: 1
+      ColorCode: 0
       Cost: 150
       Rent: 20
       UpgradeCost: 0
@@ -240,7 +264,8 @@ MonoBehaviour:
       MortgageValue: 75
     - LocationID: 25
       Name: Reading Railroad
-      LocationType: 9
+      LocationType: 2
+      ColorCode: 0
       Cost: 200
       Rent: 25
       UpgradeCost: 0
@@ -249,7 +274,8 @@ MonoBehaviour:
       MortgageValue: 100
     - LocationID: 26
       Name: Pennsylvania Railroad
-      LocationType: 9
+      LocationType: 2
+      ColorCode: 0
       Cost: 200
       Rent: 25
       UpgradeCost: 0
@@ -258,7 +284,8 @@ MonoBehaviour:
       MortgageValue: 100
     - LocationID: 27
       Name: B&O Railroad
-      LocationType: 9
+      LocationType: 2
+      ColorCode: 0
       Cost: 200
       Rent: 25
       UpgradeCost: 0
@@ -267,7 +294,8 @@ MonoBehaviour:
       MortgageValue: 100
     - LocationID: 28
       Name: Short Line
-      LocationType: 9
+      LocationType: 2
+      ColorCode: 0
       Cost: 200
       Rent: 25
       UpgradeCost: 0

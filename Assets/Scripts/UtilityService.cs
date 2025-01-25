@@ -1,14 +1,10 @@
-using System;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class UtilityService : MonoBehaviour
 {
     public static UtilityService Instance;
 
-    [SerializeField] private List<LocationTypeColor> locationTypeColors = new();
-
-    private Dictionary<LocationType, Color> colorForLocationType = new();
+    [SerializeField] private ColorCodeColorContainer colorCodeColorContainer;
 
     private void Awake()
     {
@@ -19,30 +15,13 @@ public class UtilityService : MonoBehaviour
         }
         else
             Destroy(this);
-
-        Initialize();
     }
 
-    private void Initialize()
+    public Color GetColorForColorCode(ColorCode colorCode)
     {
-        foreach (LocationTypeColor locationTypeColor in locationTypeColors)
-        {
-            colorForLocationType.Add(locationTypeColor.locationType, locationTypeColor.color);
-        }
-    }
-
-    public Color GetColorForLocationType(LocationType locationType)
-    {
-        if (colorForLocationType.ContainsKey(locationType))
-            return colorForLocationType[locationType];
+        if (colorCodeColorContainer != null)
+            return colorCodeColorContainer.GetColorForColorCode(colorCode);
 
         return Color.white;
     }
-}
-
-[Serializable]
-public class LocationTypeColor
-{
-    public LocationType locationType;
-    public Color color;
 }
